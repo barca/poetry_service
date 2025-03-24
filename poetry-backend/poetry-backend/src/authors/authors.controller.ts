@@ -1,10 +1,10 @@
 import { Controller, Get, Post, Body, Param, Query } from '@nestjs/common';
 import { AuthorsService } from './authors.service';
-import { Author } from '../models';
+import { Author } from 'src/models';
 
 @Controller('authors')
 export class AuthorsController {
-  constructor(private readonly authorsService: AuthorsService) {}
+  constructor(private readonly authorsService: AuthorsService) { }
 
   // Other endpoints (findAll, findOne, create, update, delete) would be defined here.
 

@@ -1,7 +1,7 @@
 // src/libraries/libraries.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Library } from '../models';
+import { Library } from 'src/models';
 import { LibrariesController } from './libraries.controller';
 import { LibrariesService } from './libraries.service';
 
@@ -10,4 +10,4 @@ import { LibrariesService } from './libraries.service';
   controllers: [LibrariesController],
   providers: [LibrariesService],
 })
-export class LibrariesModule {}
+export class LibrariesModule { }

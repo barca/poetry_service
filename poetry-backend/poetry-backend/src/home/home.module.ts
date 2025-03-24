@@ -4,11 +4,11 @@ import { HomePoem } from './home-poem.entity';
 import { HomeFeaturedLibrary } from './home-featured-library.entity';
 import { HomeController } from './home.controller';
 import { HomeService } from './home.service';
-import { User } from '../models';
+import { User } from 'src/models';
 
 @Module({
   imports: [TypeOrmModule.forFeature([HomePoem, HomeFeaturedLibrary, User])],
   controllers: [HomeController],
   providers: [HomeService],
 })
-export class HomeModule {}
+export class HomeModule { }

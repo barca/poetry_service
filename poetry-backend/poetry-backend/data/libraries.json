@@ -1,0 +1,94 @@
+[
+    {
+        "library_name": "Christmas Classics",
+        "featured": true,
+        "image": "url_example",
+        "description": "Timeless Christmas carols, prayers, and festive imagery that evoke the warmth and tradition of the season.",
+        "poems": [
+            {
+                "title": "A Christmas Carol",
+                "author": "Charles Kingsley"
+            },
+            {
+                "title": "A Christmas Carol",
+                "author": "George MacDonald"
+            },
+            {
+                "title": "A Christmas Carol",
+                "author": "Freeman Edwin Miller"
+            },
+            {
+                "title": "A Christmas Carol",
+                "author": "Christina Georgina Rossetti"
+            },
+            {
+                "title": "A Christmas Chant",
+                "author": "Abram Joseph Ryan"
+            },
+            {
+                "title": "A Christmas Fancy",
+                "author": "Robert Fuller Murray"
+            }
+        ]
+    },
+    {
+        "library_name": "Childhood Wonders",
+        "featured": true,
+        "image": "url_example",
+        "description": "Evoking the magic and innocence of youth, these poems celebrate a child's perspective and the beauty of nature.",
+        "poems": [
+            {
+                "title": "A Child-World",
+                "author": "James Whitcomb Riley"
+            },
+            {
+                "title": "A Child's Evensong",
+                "author": "Richard Le Gallienne"
+            },
+            {
+                "title": "A Child's First Impression Of A Star",
+                "author": "Nathaniel Parker Willis"
+            },
+            {
+                "title": "A Child's Pet",
+                "author": "William Henry Davies"
+            },
+            {
+                "title": "A Child's Treasures",
+                "author": "Rosanna Eleanor Leprohon"
+            },
+            {
+                "title": "A Child's Wish",
+                "author": "Abram Joseph Ryan"
+            }
+        ]
+    },
+    {
+        "library_name": "Satirical & Humorous Verses",
+        "featured": true,
+        "image": "url_example",
+        "description": "Witty and playful, these poems use satire and humor to critique society and explore the absurdities of human nature.",
+        "poems": [
+            {
+                "title": "A Change O' Deils",
+                "author": "Violet Jacob"
+            },
+            {
+                "title": "A Characterless",
+                "author": "Thomas Moore"
+            },
+            {
+                "title": "A Coincidence",
+                "author": "Robert Fuller Murray"
+            },
+            {
+                "title": "A College Career",
+                "author": "Robert Fuller Murray"
+            },
+            {
+                "title": "A Conceit",
+                "author": "Edward Powys Mathers"
+            }
+        ]
+    }
+]

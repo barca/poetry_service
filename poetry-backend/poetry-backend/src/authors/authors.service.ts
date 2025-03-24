@@ -1,14 +1,14 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Author, User } from '../models';
+import { Author, User } from 'src/models';
 
 @Injectable()
 export class AuthorsService {
   constructor(
     @InjectRepository(Author)
     private readonly authorsRepository: Repository<Author>,
-  ) {}
+  ) { }
 
   // Other standard methods (findAll, findOne, create, update, delete) would go here.
 

@@ -2,14 +2,14 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Comment, User, Poem } from '../models';
+import { Comment, User, Poem } from 'src/models';
 
 @Injectable()
 export class CommentsService {
   constructor(
     @InjectRepository(Comment)
     private readonly commentsRepository: Repository<Comment>,
-  ) {}
+  ) { }
 
   async findAll(): Promise<Comment[]> {
     return this.commentsRepository.find({

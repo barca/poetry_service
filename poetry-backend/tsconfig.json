@@ -16,6 +16,14 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "src/models": [
+        "poetry-backend/src/models.ts"
+      ],
+      "db_config": [
+        "poetry-backend/src/db_config.ts"
+      ]
+    }
   }
 }

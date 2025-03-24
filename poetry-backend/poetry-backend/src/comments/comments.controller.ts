@@ -1,11 +1,11 @@
 // src/comments/comments.controller.ts
 import { Controller, Get, Post, Body, Param, Query } from '@nestjs/common';
 import { CommentsService } from './comments.service';
-import { Comment } from '../models';
+import { Comment } from 'src/models';
 
 @Controller('comments')
 export class CommentsController {
-  constructor(private readonly commentsService: CommentsService) {}
+  constructor(private readonly commentsService: CommentsService) { }
 
   /**
    * Toggle a like on a comment.

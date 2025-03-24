@@ -1,0 +1,78 @@
+[
+  {
+    "response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\n  \"author\": \"string\",\n  \"dateOfBirth\": \"string\",\n  \"dateOfDeath\": \"string\",\n  \"summary\": \"string\",\n  \"placeOfBirth\": \"string\",\n  \"placeOfResidence\": \"string\",\n  \"tags\": [\"string\"]\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "avgLogprobs": -0.02669609524309635
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 272,
+        "candidatesTokenCount": 64,
+        "totalTokenCount": 336,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 272
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 64
+          }
+        ]
+      },
+      "modelVersion": "gemini-2.0-flash"
+    }
+  },
+  {
+    "author": "string",
+    "dateOfBirth": "string",
+    "dateOfDeath": "string",
+    "summary": "string",
+    "placeOfBirth": "string",
+    "placeOfResidence": "string"
+  },
+  {
+    "author": "string",
+    "dateOfBirth": "string",
+    "dateOfDeath": "string",
+    "summary": "string",
+    "placeOfBirth": "string",
+    "placeOfResidence": "string"
+  },
+  {
+    "author": "string",
+    "dateOfBirth": "string",
+    "dateOfDeath": "string",
+    "summary": "string",
+    "placeOfBirth": "string",
+    "placeOfResidence": "string"
+  },
+  {
+    "author": "string",
+    "dateOfBirth": "string",
+    "dateOfDeath": "string",
+    "summary": "string",
+    "placeOfBirth": "string",
+    "placeOfResidence": "string"
+  },
+  {
+    "author": "string",
+    "dateOfBirth": "string",
+    "dateOfDeath": "string",
+    "summary": "string",
+    "placeOfBirth": "string",
+    "placeOfResidence": "string"
+  }
+]

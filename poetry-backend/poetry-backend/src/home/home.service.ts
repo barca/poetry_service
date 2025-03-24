@@ -4,7 +4,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { HomePoem } from './home-poem.entity';
 import { HomeFeaturedLibrary } from './home-featured-library.entity';
-import { Author, Poem, Library, User } from '../models';
+import { Author, Poem, Library, User } from 'src/models';
 
 export interface HomeResponse {
   staticView: {
@@ -26,7 +26,7 @@ export class HomeService {
     private readonly homeFeaturedLibraryRepository: Repository<HomeFeaturedLibrary>,
     @InjectRepository(User)
     private readonly userRepository: Repository<User>,
-  ) {}
+  ) { }
 
   async getHomeView(userId: string, viewDate?: string): Promise<HomeResponse> {
     // Default to today's date (formatted as YYYY-MM-DD)

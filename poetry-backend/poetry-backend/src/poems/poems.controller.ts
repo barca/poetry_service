@@ -9,11 +9,11 @@ import {
   Param,
 } from '@nestjs/common';
 import { PoemsService } from './poems.service';
-import { Poem } from '../models';
+import { Poem } from 'src/models';
 
 @Controller('poems')
 export class PoemsController {
-  constructor(private readonly poemsService: PoemsService) {}
+  constructor(private readonly poemsService: PoemsService) { }
 
   @Get()
   async findAll(): Promise<Poem[]> {

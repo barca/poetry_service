@@ -5,7 +5,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
-import { Poem } from '../models';
+import { Poem } from 'src/models';
 
 @Entity({ name: 'home_poem' })
 export class HomePoem {

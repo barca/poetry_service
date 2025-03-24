@@ -5,7 +5,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
-import { Library } from '../models';
+import { Library } from 'src/models';
 
 @Entity({ name: 'home_featured_library' })
 export class HomeFeaturedLibrary {

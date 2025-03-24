@@ -11,11 +11,11 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { LibrariesService, LibraryForUserResponse } from './libraries.service';
-import { Library } from '../models';
+import { Library } from 'src/models';
 
 @Controller('libraries')
 export class LibrariesController {
-  constructor(private readonly librariesService: LibrariesService) {}
+  constructor(private readonly librariesService: LibrariesService) { }
 
   @Get()
   async findAll(): Promise<Library[]> {

@@ -1,7 +1,7 @@
 // src/comments/comments.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Comment } from '../models';
+import { Comment } from 'src/models';
 import { CommentsController } from './comments.controller';
 import { CommentsService } from './comments.service';
 
@@ -10,4 +10,4 @@ import { CommentsService } from './comments.service';
   controllers: [CommentsController],
   providers: [CommentsService],
 })
-export class CommentsModule {}
+export class CommentsModule { }

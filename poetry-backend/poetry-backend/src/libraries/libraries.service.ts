@@ -2,7 +2,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Library, User, Author, Poem } from '../models';
+import { Library, User, Author, Poem } from 'src/models';
 
 export interface LibraryForUserResponse {
   library: Library;
@@ -31,7 +31,7 @@ export class LibrariesService {
   constructor(
     @InjectRepository(Library)
     private readonly librariesRepository: Repository<Library>,
-  ) {}
+  ) { }
 
   // Return all libraries, including basic relations.
   async findAll(): Promise<Library[]> {

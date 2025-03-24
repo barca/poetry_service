@@ -2,14 +2,14 @@
 import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Poem } from '../models';
+import { Poem } from 'src/models';
 
 @Injectable()
 export class PoemsService {
   constructor(
     @InjectRepository(Poem)
     private poemsRepository: Repository<Poem>,
-  ) {}
+  ) { }
 
   findAll(): Promise<Poem[]> {
     return this.poemsRepository.find({ relations: ['author'] });

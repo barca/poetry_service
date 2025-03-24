@@ -1,5 +1,3 @@
-// src/entities.ts
-
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -30,13 +28,19 @@ export class Author {
   biography: string;
 
   @Column({ nullable: true })
-  lifespan: string;
+  date_of_birth: Date;
+
+  @Column({ nullable: true })
+  date_of_death: Date;
 
   @Column({ nullable: true })
   place_of_birth: string;
 
   @Column({ nullable: true })
   place_of_residence: string;
+
+  @Column('simple-array', { nullable: true })
+  tags: string[];
 
   @CreateDateColumn({ type: 'timestamp' })
   created_at: Date;
@@ -58,8 +62,11 @@ export class Poem {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column()
+  @Column('text')
   title: string;
+
+  @Column('text', { nullable: true })
+  text: string;
 
   @Column('text', { nullable: true })
   image_url: string;
@@ -72,6 +79,9 @@ export class Poem {
 
   @CreateDateColumn({ type: 'timestamp' })
   created_at: Date;
+
+  @Column('simple-array', { nullable: true })
+  tags: string[];
 
   // Many poems are written by one author.
   @ManyToOne(() => Author, (author) => author.poems, { onDelete: 'CASCADE' })
@@ -164,7 +174,7 @@ export class Library {
   image_url: string;
 
   @CreateDateColumn({ type: 'timestamp' })
-  created_at: Date;
+  updated: Date;
 
   // The user who created this library.
   @ManyToOne(() => User, (user) => user.libraries, { onDelete: 'CASCADE' })
